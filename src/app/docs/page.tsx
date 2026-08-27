@@ -28,13 +28,13 @@ const SECTIONS = [
   { id: 'overview', title: 'Overview' },
   { id: 'endpoint', title: 'Endpoint' },
   { id: 'headers', title: 'Headers' },
-  { id: 'request', title: 'Request body' },
+  { id: 'request', title: 'Request Body' },
   { id: 'limits', title: 'Limits' },
-  { id: 'streaming', title: 'SSE streaming' },
-  { id: 'client', title: 'Client usage' },
+  { id: 'streaming', title: 'SSE Streaming' },
+  { id: 'client', title: 'Client Usage' },
   { id: 'errors', title: 'Errors' },
-  { id: 'architecture', title: 'Live architecture' },
-  { id: 'edge-cache', title: 'Edge caching' },
+  { id: 'architecture', title: 'Live Architecture' },
+  { id: 'edge-cache', title: 'Edge Caching' },
   { id: 'private-cloud', title: 'VPC & BYOK' },
 ];
 
@@ -206,7 +206,7 @@ export default function Docs() {
     <PageShell>
       <PageHeader
         eyebrow="Documentation"
-        title="API & architecture reference"
+        title="API & Architecture Reference"
         intro="The streaming endpoint behind the terminal on this site, documented exactly as deployed — request schema, SSE event protocol, headers, limits, and error contract — followed by the reference architecture for edge caching and private-cloud deployment."
         meta="Last updated: August 27, 2026 · API version: v1"
       />
@@ -257,7 +257,7 @@ export default function Docs() {
             />
           </Section>
 
-          <Section id="headers" title="Header specification">
+          <Section id="headers" title="Header Specification">
             <SpecTable
               columns={['Header', 'Requirement']}
               rows={[
@@ -311,7 +311,7 @@ export default function Docs() {
             </Note>
           </Section>
 
-          <Section id="request" title="Request body">
+          <Section id="request" title="Request Body">
             <p>
               A single <Code>messages</Code> array, ordered oldest to newest. The
               server derives the model context from it and discards it after the
@@ -358,7 +358,7 @@ export default function Docs() {
             </p>
           </Section>
 
-          <Section id="streaming" title="SSE streaming schema">
+          <Section id="streaming" title="SSE Streaming Schema">
             <p>
               The response is a UI message stream: one JSON object per{' '}
               <Code>data:</Code> line, terminated by <Code>data: [DONE]</Code>.
@@ -388,7 +388,7 @@ export default function Docs() {
             </p>
           </Section>
 
-          <Section id="client" title="Client usage">
+          <Section id="client" title="Client Usage">
             <p>
               The reference client is the AI SDK&apos;s <Code>useChat</Code>,
               which handles history accumulation, incremental parsing, and
@@ -397,7 +397,7 @@ export default function Docs() {
             <CodeBlock label="React — minimal client" code={CLIENT_EXAMPLE} />
           </Section>
 
-          <Section id="errors" title="Error contract">
+          <Section id="errors" title="Error Contract">
             <p>
               Errors are returned as JSON with an <Code>error</Code> string.
               Messages are deliberately generic: upstream provider identity,
@@ -441,7 +441,7 @@ export default function Docs() {
             </Note>
           </Section>
 
-          <Section id="architecture" title="Live architecture">
+          <Section id="architecture" title="Live Architecture">
             <p>
               What actually serves this site today. Every stage below is in the
               request path of the terminal above.
@@ -456,7 +456,7 @@ export default function Docs() {
             </p>
           </Section>
 
-          <Section id="edge-cache" title="Edge caching">
+          <Section id="edge-cache" title="Edge Caching">
             <Note label="Reference architecture">
               The design below is the target topology for a production tenant. It
               is not what serves this public demo, which runs the request path in{' '}
@@ -464,7 +464,7 @@ export default function Docs() {
                 href="#architecture"
                 className="text-emerald-400 transition hover:text-emerald-300"
               >
-                Live architecture
+                Live Architecture
               </a>{' '}
               with no semantic cache layer.
             </Note>
@@ -484,7 +484,7 @@ export default function Docs() {
             </p>
           </Section>
 
-          <Section id="private-cloud" title="Private VPC & BYOK deployment">
+          <Section id="private-cloud" title="Private VPC & BYOK Deployment">
             <Note label="Reference architecture">
               The deployment model offered for enterprise engagements. Availability
               and scope are agreed per contract — talk to{' '}

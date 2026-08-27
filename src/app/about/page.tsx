@@ -40,17 +40,17 @@ const PROFILES = [
 const FOCUS_AREAS = [
   {
     eyebrow: '01 // Streaming',
-    title: 'High-throughput AI streaming',
+    title: 'High-Throughput AI Streaming',
     body: 'Token-level streaming pipelines built on server-sent events, with backpressure-aware transports, cancellable inference requests, and bounded context windows that degrade gracefully instead of failing a session.',
   },
   {
     eyebrow: '02 // Routing',
-    title: 'Edge routing infrastructure',
+    title: 'Edge Routing Infrastructure',
     body: 'Request routing at the edge: provider abstraction across foundation models, multi-region failover paths, per-identity rate limiting, and request validation applied before any upstream token spend.',
   },
   {
     eyebrow: '03 // Systems',
-    title: 'Enterprise distributed systems',
+    title: 'Enterprise Distributed Systems',
     body: 'Stateless service design with shared-store coordination, fixed-window counters that survive horizontal scaling, structured failure isolation, and deployment topologies that keep customer data inside customer-controlled networks.',
   },
 ];
@@ -65,7 +65,7 @@ export default function About() {
         meta="Operating entity: BAYAR DEV, Walnut Creek, California · Contact: hi@bayar.dev"
       />
 
-      <Section id="profile" title="Founder profile">
+      <Section id="profile" title="Founder Profile">
         <p>
           bayar.dev is founded and engineered by Bayar. The work is
           infrastructure-first: the platform layer that sits between an
@@ -93,7 +93,7 @@ export default function About() {
         </p>
       </Section>
 
-      <Section id="focus" title="Technical focus">
+      <Section id="focus" title="Technical Focus">
         <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
           {FOCUS_AREAS.map(({ eyebrow, title, body }) => (
             <div
@@ -110,7 +110,7 @@ export default function About() {
         </div>
       </Section>
 
-      <Section id="verification" title="Identity verification">
+      <Section id="verification" title="Identity Verification">
         <p>
           The following profiles are hosted by independent third parties and can
           be used to verify the identity and engineering history behind this

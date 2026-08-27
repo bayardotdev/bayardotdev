@@ -25,14 +25,14 @@ export const metadata: Metadata = {
 
 const SECTIONS = [
   { id: 'scope', title: 'Scope' },
-  { id: 'retention', title: 'Retention policy' },
-  { id: 'processed', title: 'What is processed' },
-  { id: 'not-collected', title: 'What is not collected' },
-  { id: 'boundaries', title: 'Handling boundaries' },
+  { id: 'retention', title: 'Retention Policy' },
+  { id: 'processed', title: 'What Is Processed' },
+  { id: 'not-collected', title: 'What Is Not Collected' },
+  { id: 'boundaries', title: 'Handling Boundaries' },
   { id: 'subprocessors', title: 'Subprocessors' },
-  { id: 'transit', title: 'Edge transit' },
-  { id: 'private', title: 'Private deployments' },
-  { id: 'rights', title: 'Your rights' },
+  { id: 'transit', title: 'Edge Transit' },
+  { id: 'private', title: 'Private Deployments' },
+  { id: 'rights', title: 'Your Rights' },
   { id: 'security', title: 'Security' },
   { id: 'children', title: 'Children' },
   { id: 'changes', title: 'Changes' },
@@ -44,7 +44,7 @@ export default function Privacy() {
     <PageShell>
       <PageHeader
         eyebrow="Legal"
-        title="Privacy policy"
+        title="Privacy Policy"
         intro="bayar.dev operates a zero-retention public endpoint: prompts and completions are processed in memory to answer a request and are not written to any datastore we control. This policy states precisely what is processed, for how long, and which third parties are in the path."
         meta="Last updated: August 27, 2026 · Effective: August 27, 2026"
       />
@@ -64,13 +64,13 @@ export default function Privacy() {
                 href="#private"
                 className="text-emerald-400 transition hover:text-emerald-300"
               >
-                Private deployments
+                Private Deployments
               </a>
               .
             </p>
           </Section>
 
-          <Section id="retention" title="2. Zero-retention policy">
+          <Section id="retention" title="2. Zero-Retention Policy">
             <p>
               We do not retain the content of your interactions. Prompts you
               submit and the responses streamed back exist in server memory only
@@ -107,7 +107,7 @@ export default function Privacy() {
             </Note>
           </Section>
 
-          <Section id="processed" title="3. What is processed">
+          <Section id="processed" title="3. What Is Processed">
             <SpecTable
               columns={['Data', 'Purpose', 'Lifetime']}
               rows={[
@@ -150,7 +150,7 @@ export default function Privacy() {
             </p>
           </Section>
 
-          <Section id="not-collected" title="4. What is not collected">
+          <Section id="not-collected" title="4. What Is Not Collected">
             <ul className="list-disc space-y-2 pl-5">
               <li>No accounts, passwords, or user profiles — the demo requires no signup.</li>
               <li>No analytics, tracking pixels, session recording, or advertising networks.</li>
@@ -168,7 +168,7 @@ export default function Privacy() {
             </p>
           </Section>
 
-          <Section id="boundaries" title="5. Data handling boundaries">
+          <Section id="boundaries" title="5. Data Handling Boundaries">
             <p>Three boundaries are enforced in the request path:</p>
             <ul className="list-disc space-y-2 pl-5">
               <li>
@@ -236,7 +236,7 @@ export default function Privacy() {
             </p>
           </Section>
 
-          <Section id="transit" title="7. Edge transit specifications">
+          <Section id="transit" title="7. Edge Transit Specifications">
             <ul className="list-disc space-y-2 pl-5">
               <li>
                 All traffic is served over HTTPS. Plain HTTP requests are
@@ -265,7 +265,7 @@ export default function Privacy() {
             </ul>
           </Section>
 
-          <Section id="private" title="8. Private and self-hosted deployments">
+          <Section id="private" title="8. Private and Self-Hosted Deployments">
             <p>
               In a private deployment, the gateway runs inside the
               customer&apos;s own cloud account and reaches a customer-owned
@@ -284,7 +284,7 @@ export default function Privacy() {
             </p>
           </Section>
 
-          <Section id="rights" title="9. Your rights">
+          <Section id="rights" title="9. Your Rights">
             <p>
               Depending on where you live, you may have rights to access,
               correct, delete, or restrict processing of your personal data, and
@@ -338,7 +338,7 @@ export default function Privacy() {
             </p>
           </Section>
 
-          <Section id="changes" title="12. Changes to this policy">
+          <Section id="changes" title="12. Changes to This Policy">
             <p>
               Material changes are reflected in the &ldquo;Last updated&rdquo;
               date at the top of this page. Continued use of the site after a
