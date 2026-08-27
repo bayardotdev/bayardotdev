@@ -5,12 +5,12 @@ import { Code, PageHeader, PageShell, Section, SpecTable } from '@/components/Pr
 export const metadata: Metadata = {
   title: 'About',
   description:
-    'bayar.dev is built by Bayar Naran, Founder & Systems Architect — high-throughput AI streaming pipelines, edge routing infrastructure, and enterprise distributed systems.',
+    'bayar.dev is built by Namchinbayar (Bayar) Naran, Founder & Systems Architect — high-throughput AI streaming pipelines, edge routing infrastructure, and enterprise distributed systems.',
   alternates: { canonical: '/about' },
   openGraph: {
     title: 'About — bayar.dev',
     description:
-      'Founder profile and verifiable identity links for bayar.dev, built by Bayar Naran.',
+      'Founder profile and verifiable identity links for bayar.dev, built by Namchinbayar (Bayar) Naran.',
     url: '/about',
   },
 };
@@ -60,14 +60,14 @@ export default function About() {
     <PageShell>
       <PageHeader
         eyebrow="About"
-        title="Bayar Naran"
+        title="Namchinbayar (Bayar) Naran"
         intro="Founder & Systems Architect, bayar.dev. Engineering high-throughput AI streaming pipelines, edge routing infrastructure, and enterprise distributed systems."
-        meta="Operating entity: bayar.dev · Contact: hi@bayar.dev"
+        meta="Operating entity: BAYAR DEV, Walnut Creek, California · Contact: hi@bayar.dev"
       />
 
       <Section id="profile" title="Founder profile">
         <p>
-          bayar.dev is founded and engineered by Bayar Naran. The work is
+          bayar.dev is founded and engineered by Bayar. The work is
           infrastructure-first: the platform layer that sits between an
           application and a foundation model — routing, validation, rate
           limiting, streaming transport, caching, and the deployment topology
@@ -145,7 +145,11 @@ export default function About() {
           columns={['Attribute', 'Value']}
           rows={[
             ['Domain', 'bayar.dev'],
-            ['Founder', 'Bayar Naran — Founder & Systems Architect'],
+            ['Founder', 'Namchinbayar (Bayar) Naran — Founder & Systems Architect'],
+            [
+              'Legal entity',
+              'Namchinbayar Naran, doing business as BAYAR DEV, located in Walnut Creek, California',
+            ],
             [
               'Contact',
               <a
