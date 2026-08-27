@@ -1,11 +1,15 @@
 /// <reference path="../.astro/types.d.ts" />
 
-type ENV = {
+type Env = {
     AI: any;
 };
 
-type Runtime = import("@astrojs/cloudflare").Runtime<ENV>;
-
 declare namespace App {
-    interface Locals extends Runtime { }
+    interface Locals {
+        runtime: {
+            env: Env;
+            ctx: ExecutionContext;
+            cf: any;
+        };
+    }
 }
