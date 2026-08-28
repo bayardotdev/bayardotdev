@@ -35,7 +35,7 @@ export default function Image() {
           }}
         />
         <div style={{ color: '#a3a3a3', fontSize: 36, lineHeight: 1.4, maxWidth: 820 }}>
-          Enterprise AI infrastructure &amp; automated workflows built for modern software teams.
+          Low-latency streaming, edge routing, and zero-retention data boundaries.
         </div>
       </div>
     ),

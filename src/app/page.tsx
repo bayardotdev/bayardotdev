@@ -13,7 +13,7 @@ export default function Home() {
             bayar<span className="text-emerald-400">.dev</span>
           </h1>
           <p className="text-neutral-400 text-sm max-w-md mx-auto">
-            Enterprise AI infrastructure & automated workflows built for modern software teams.
+            Low-latency streaming, edge routing, and zero-retention data boundaries.
           </p>
         </div>
 

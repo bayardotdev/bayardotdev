@@ -14,9 +14,9 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const title = "bayar.dev — Enterprise AI infrastructure";
+const title = "bayar.dev — High-Throughput AI Streaming & Systems Architecture";
 const description =
-  "Enterprise AI infrastructure & automated workflows built for modern software teams.";
+  "Infrastructure layer connecting applications to foundation models with low-latency streaming, edge routing, and zero-retention data boundaries.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://bayar.dev"),
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title,
     description,
-    url: "/",
+    url: "https://bayar.dev",
     siteName: "bayar.dev",
     type: "website",
   },
